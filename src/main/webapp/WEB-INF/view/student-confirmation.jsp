@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang = "EN">
 
     <head>
         <title>Student Confirmation</title>

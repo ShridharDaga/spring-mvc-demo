@@ -1,6 +1,7 @@
 package com.springdemo.mvc;
 
 import java.util.LinkedHashMap;
+import java.util.Map;
 
 public class Student {
     private String firstName;
@@ -9,7 +10,7 @@ public class Student {
     private String favoriteLanguage;
     private String[] operatingSystems;
 
-    private LinkedHashMap<String, String> countryOptions;
+    private Map<String, String> countryOptions;
     public Student() {
         countryOptions = new LinkedHashMap<>();
         countryOptions.put("BR", "Brazil");
@@ -58,7 +59,7 @@ public class Student {
         this.operatingSystems = operatingSystems;
     }
 
-    public LinkedHashMap<String, String> getCountryOptions() {
+    public Map<String, String> getCountryOptions() {
         return countryOptions;
     }
 

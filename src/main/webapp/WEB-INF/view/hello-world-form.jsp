@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang = "EN">
     <head>
         <title>Hello World Input Form</title>
     </head>

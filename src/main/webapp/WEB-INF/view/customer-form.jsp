@@ -1,6 +1,8 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
-<html>
+<!DOCTYPE html>
+
+<html lang = "EN">
 
 <head>
 	<title>Customer Registration Form</title>
@@ -11,7 +13,7 @@
 </head>
 <body>
 
-<i>Fill out the form. Asterisk (*) means required.</i>
+<em>Fill out the form. Asterisk (*) means required.</em>
 <br><br>
 
 	<form:form action="processForm" modelAttribute="customer">

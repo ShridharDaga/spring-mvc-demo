@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang = "EN">
 
     <head>
         <title>Customer Confirmation</title>

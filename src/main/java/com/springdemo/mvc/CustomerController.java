@@ -1,5 +1,7 @@
 package com.springdemo.mvc;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -11,6 +13,7 @@ import javax.validation.Valid;
 @RequestMapping("/customer")
 public class CustomerController {
 
+    Logger log = LoggerFactory.getLogger(CustomerController.class);
     @RequestMapping("/showForm")
     public String showForm(Model model){
         model.addAttribute("customer", new Customer());
@@ -20,9 +23,9 @@ public class CustomerController {
     @RequestMapping("/processForm")
     public String processForm(@Valid @ModelAttribute("customer") Customer theCustomer, BindingResult result){
 
-        System.out.println("Last name : |" + theCustomer.getLastName() + "|");
-        System.out.println("Binding result: " + result);
-        System.out.println("\n");
+        log.info("Last name : |" + theCustomer.getLastName() + "|");
+        log.info("Binding result: " + result);
+        log.info("\n");
 
         if(result.hasErrors())
             return "customer-form";
